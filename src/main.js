@@ -9,9 +9,9 @@ import { Player } from "./player.js";
 import { Endpoint } from "./endpoint.js";
 
 import coinCollectionWav from "../assets/sounds/Coincollection.wav";
-import playerSpriteImg from "../assets/sprites/Player.png";
+import playerSpriteImg from "../assets/sprites/player.png";
 import SpikespriteImg from "../assets/sprites/Spike.png";
-import platformspriteImg from "../assets/sprites/platform.png";
+import platformspriteImg from "../assets/sprites/Platform.png";
 import coinspriteImg from "../assets/sprites/coin1.png";
 import HealthspriteImg from "../assets/sprites/Health.png";
 import GameoverspriteImg from "../assets/sprites/GAMEOVER.png";
