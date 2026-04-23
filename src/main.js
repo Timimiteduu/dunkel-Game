@@ -210,7 +210,7 @@ function checkLevel() {
     }
     else {
         localStorage.clear()
-        location.href="/"
+        location.href="index.html"
     }
 
 }
