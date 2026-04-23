@@ -56,26 +56,13 @@ canvas {
   text-decoration: none;
   color: #000;
 }
-.Shopbutton {
-  border-radius: 1rem;
-  background-color: crimson;
-  font-size: 2rem;
-  margin-top: 5%;
-  border: none;
-  text-decoration: none;
-  color: #000;
-}
 .Startbutton:hover {
   opacity: 80%;
   cursor: pointer;
   transform: scale(1.1);
 
 }
-.Shopbutton:hover {
-  opacity: 80%;
-  cursor: pointer;
-  transform: scale(1.1);
-}
+
 .unnötig {
   font-weight: bold;
 }
