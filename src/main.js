@@ -7,32 +7,41 @@ import { Platform } from "./platform.js";
 import { Spike } from "./spike.js";
 import { Player } from "./player.js";
 import { Endpoint } from "./endpoint.js";
+
+import coinCollectionWav from "../assets/sounds/Coincollection.wav";
+import playerSpriteImg from "../assets/sprites/Player.png";
+import SpikespriteImg from "../assets/sprites/Spike.png";
+import platformspriteImg from "../assets/sprites/Platform.png";
+import coinspriteImg from "../assets/sprites/coin1.png";
+import HealthspriteImg from "../assets/sprites/Health.png";
+import GameoverspriteImg from "../assets/sprites/GAMEOVER.png";
+import MountainspriteImg from "../assets/Backgrounds/Mountain.png"
 // --- Setup ---
 canvas.width = 1200;
 canvas.height = 600;
 
-const coinSound = new Audio("./assets/sounds/coincollection.wav")
+const coinSound = new Audio(coinCollectionWav)
 export let player = null;
 export const playersprite = {
     width:5230,
     height:6876,
     spriteheight:523,
     spritewidth:575,
-    image:img("../assets/sprites/Player.png")
+    image:img(playerSpriteImg)
 }
 const platformsprite = {
     width:14,
     height:28,
     spriteheight:14,
     spritewidth:14,
-    image:img("../assets/sprites/Platform.png")
+    image:img(platformspriteImg)
 }
 const coinsprite = {
     width:240,
     height:16,
     spritewidth:16,
     spriteheight:16,
-    image:img("../assets/sprites/coin1.png")
+    image:img(coinspriteImg)
 }
 export const health = {
     curentStateAnimation:"3/3",
@@ -46,16 +55,16 @@ export const healthsprite = {
     height:77,
     spritewidth:33,
     spriteheight:10,
-    image:img("../assets/sprites/Health.png")
+    image:img(HealthspriteImg)
 }
 export const spikesprite = {
     width:18,
     height:10,
     spritewidth:18,
     spriteheight:10,
-    image:img("../assets/sprites/Spike.png")
+    image:img(SpikespriteImg)
 }
-const gameoversprite = img("./assets/sprites/GAMEOVER.png")
+const gameoversprite = img(GameoverspriteImg)
 const worldscale = 50
 let level = Number(localStorage.getItem("level")??1);
 export let stage = [
@@ -75,7 +84,7 @@ let map = [
         [0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,3,0,3,0,3,0,3,0,2,0]
         ]
 let backgroundImage = new Image();
-backgroundImage.src = "../assets/Backgrounds/Mountain.png"
+backgroundImage.src = MountainspriteImg
 let biting = false;
 let rolling = false;
 let coins = 0;
