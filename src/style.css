@@ -1,0 +1,81 @@
+:root {
+  --coindisplaytxtcolor: gold;
+  --coindisplaytxtsize: 1rem;
+  --lifedisplaycolor: red;
+  --lifedisplaysize: 1rem;
+}
+
+
+body {
+  margin: 0;
+  background: none;
+  color: #fff;
+  font-family: sans-serif;
+}
+canvas {
+  display: block;
+  margin: 20px auto;
+  background: none;
+  border: 1px solid #000;
+  image-rendering: pixelated;
+}
+.coindisplay {
+  margin-top: 1rem;
+  margin-left: 3rem;
+  font-size: var(--coindisplaytxtsize);
+  color: var(--coindisplaytxtcolor);
+  position: absolute;
+  font-family: cursive;
+  border: 2px, solid;
+  border-color: var(--coindisplaytxtcolor);
+  background: none;
+}
+.lifedisplay {
+  size: 1rem;
+  position: absolute;
+  margin-top: 1rem;
+  margin-left: 6rem;
+  color: var(--lifedisplaycolor);
+}
+.Body {
+  background-color: gold;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Titel {
+  font-size: 3rem;
+  font-family: cursive;
+}
+.Startbutton {
+  border-radius: 1rem;
+  background-color: chocolate;
+  font-size: 2rem;
+  margin-top: 20%;
+  border: none;
+  text-decoration: none;
+  color: #000;
+}
+.Shopbutton {
+  border-radius: 1rem;
+  background-color: crimson;
+  font-size: 2rem;
+  margin-top: 5%;
+  border: none;
+  text-decoration: none;
+  color: #000;
+}
+.Startbutton:hover {
+  opacity: 80%;
+  cursor: pointer;
+  transform: scale(1.1);
+
+}
+.Shopbutton:hover {
+  opacity: 80%;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.unnötig {
+  font-weight: bold;
+}
