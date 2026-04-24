@@ -20,7 +20,19 @@ export function applyGravity() {
   player.onground = false
   }
 }
-
+export function inframe(a) {
+  if (a.y < 0) {
+    a.velocityY=0
+    a.y += 10;
+    console.log(a.y)
+  }
+  if (a.x > canvas.width) {
+    a.x -= 10;
+  }
+  if (a.x < 0) {
+    a.x += 10;
+  }
+}
 
 
 export function applyMovement() {

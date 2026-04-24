@@ -1,6 +1,6 @@
 import { draw_sprite } from "./animations.js";
 import { canvas, ctx, keys, init, img } from "./engine.js";
-import { applyGravity, applyMovement } from "./Physics.js";
+import { applyGravity, applyMovement, inframe } from "./Physics.js";
 import { checkCollision } from "./collitions.js";
 import { Coin } from "./coins.js"
 import { Platform } from "./platform.js";
@@ -205,7 +205,7 @@ function checkLevel() {
         map = [
         [5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,4,0,0,1],
         [1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1],
-        [0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1],
+        [0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1],
         [0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,0,1],
         [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1],
         [0,0,0,0,0,0,3,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1],
@@ -292,6 +292,7 @@ function update() {
         }
     }
     applyMovement();
+    inframe(player);  
 }
 
 
