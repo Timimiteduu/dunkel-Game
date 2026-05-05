@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "dev": "vite",
-    "build":"vite build"
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +13,8 @@
   "type": "commonjs",
   "devDependencies": {
     "vite": "^8.0.8"
+  },
+  "dependencies": {
+    "git": "^0.1.5"
   }
 }
